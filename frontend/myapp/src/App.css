@@ -1,81 +1,237 @@
+/* App.css */
+
 .App {
   display: flex;
   flex-direction: column;
+  
 }
 
 nav {
   background-color: #ffffff;
-  color: white;
-  padding: 22px 0;
+  color: black; /* Changed text color to improve readability */
+  padding: 1rem 0; /* Adjusted padding for better spacing */
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding-left: 850px;
+  padding-left: 0; /* Reset padding */
+  text-align: right; /* Align links to the right */
   font-size: large;
+  margin-right: 40px;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 50px;
+  margin-left: 4rem; /* Changed to rem for responsiveness */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* No margin for the first child */
 }
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0); /* Changed link color */
 }
 
-section {
-  margin: 50px 0;
-  margin-left: 100PX;
-  margin-right: 100px;
-  margin-top: 50px;
-  font-size: x-large;
-}
-
-a {
-  color: blue;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.he{
-  font-weight: 600;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: xxx-large;
-}
-
-
-
-img {
-  max-width: 50%;
-  display: inline-flex;
-}
-
-.home-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.content {
-  flex: 1;
+/* Style for home container */
+.join-container {
+  background-color: #f9f9f9;
   padding: 20px;
-}
-
-.image-container {
-  flex: 1;
+  margin-bottom: 20px;
+  height: 610px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
+/* Style for content section */
+.content {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Style for heading */
+.he {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Style for paragraph */
+.content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Style for link */
+.content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.content a:hover {
+  background-color: #0056b3;
+}
+
+/* Style for image container */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Style for image */
 .image-container img {
-  max-width: 200%;
-  max-height: 100%;
-  margin-right: 300px;
-  padding: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* Style for content section */
+.content {
+  text-align: center;
+  max-width: 800px; /* Adjust max-width as needed */
+}
+
+/* Style for heading */
+.content h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+/* Style for features container */
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* Style for left features */
+.left-features {
+  width: 45%;
+}
+
+/* Style for right features */
+.right-features {
+  width: 45%;
+}
+
+/* Style for features */
+.feature {
+  margin-bottom: 40px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.serv-container {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+}
+
+.serv-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.serv-container ul li {
+  margin-bottom: 10px;
+}
+
+/* Features Container */
+.feat-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.left-features,
+.right-features {
+  flex: 1;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+  }
+
+  .left-features,
+  .right-features {
+    flex: none;
+  }
+}
+
+.cont-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+/* CSS for the service items */
+.service-grid > div {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* CSS for the service paragraphs */
+.service-grid p {
+  margin-bottom: 10px;
+}
+
+/* CSS for the service links */
+.service-grid a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.service-grid a:hover {
+  background-color: #0056b3;
 }
