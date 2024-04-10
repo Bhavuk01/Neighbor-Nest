@@ -42,10 +42,9 @@ nav ul li a {
   margin-bottom: 20px;
   height: 610px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   
 }
+
 
 /* Style for content section */
 .content {
