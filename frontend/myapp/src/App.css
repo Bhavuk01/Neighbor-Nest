@@ -35,15 +35,30 @@ nav ul li a {
   color: rgb(0, 0, 0); /* Changed link color */
 }
 
-/* Style for home container */
 .join-container {
-  background-color: #f9f9f9;
-  padding: 20px;
-  margin-bottom: 20px;
-  height: 610px;
   display: flex;
-  
+  justify-content: flex-start; /* Align content to the start of the container */
+  align-items: center; /* Align items vertically */
 }
+
+.left-content {
+  flex: 1;
+}
+
+.right-content {
+  display: flex;
+  margin-left: 20px; /* Optional: Add some spacing between content and image */
+}
+
+
+.right-content img {
+  width: 100px; /* Adjust the width according to your preference */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 
 
 /* Style for content section */
@@ -80,18 +95,6 @@ nav ul li a {
   background-color: #0056b3;
 }
 
-/* Style for image container */
-.image-container {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* Style for image */
-.image-container img {
-  max-width: 100%;
-  height: auto;
-}
 
 
 
