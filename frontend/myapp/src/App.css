@@ -163,6 +163,10 @@ nav ul li a {
 .feat-container {
   background-color: #f9f9f9;
   padding: 20px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  
   
 }
 
