@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import shape1 from './shape1.png'; // Importing the image properly
+import shape1  from "./shape1.png"
 
 function App() {
   return (
@@ -30,19 +30,16 @@ function Home() {
     <div>
 
     
-    <div className="join-container">
-    <section id="community" className="content">
+<section className="content">
         <div className="left-content">
-          <h2 className="he">Join Your <br/> Neighborhood <br/> Association Today</h2>
-          <p>Neighbor Nest is the perfect platform to connect with your neighborhood association and work together to improve your community. With collaborative event planning, project coordination, and resource sharing, Neighbor Nest makes it easy to bring your neighbors together.</p>
-          <a href="#services">View All Services</a>
+          <h2 className="he">Join Your <br /> Neighborhood <br /> Association Today</h2>
+          <p id="hetext">Neighbor Nest is the perfect platform to connect with your neighborhood association and work together to improve your community. With collaborative event planning, project coordination, and resource sharing, Neighbor Nest makes it easy to  bring your neighbors together.</p>
+          <a href="#services" id="button"> View All Services</a>
         </div>
         <div className="right-content">
-          <img src={shape1} alt="Neighborhood" /> {/* Use curly braces to include JavaScript expressions */}
+          <img src={shape1} alt="Neighborhood" />
         </div>
       </section>
-  
-</div>
 
 <div className="cont-container">
   <section id="about" className="content">

@@ -3,42 +3,51 @@
 .App {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 nav {
   background-color: #ffffff;
-  color: black; /* Changed text color to improve readability */
-  padding: 1rem 0; /* Adjusted padding for better spacing */
+  color: black;
+  /* Changed text color to improve readability */
+  padding: 1rem 0;
+  /* Adjusted padding for better spacing */
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding-left: 0; /* Reset padding */
-  text-align: right; /* Align links to the right */
+  padding-left: 0;
+  /* Reset padding */
+  text-align: right;
+  /* Align links to the right */
   font-size: large;
   margin-right: 40px;
 }
 
 nav ul li {
   display: inline;
-  margin-left: 4rem; /* Changed to rem for responsiveness */
+  margin-left: 4rem;
+  /* Changed to rem for responsiveness */
 }
 
 nav ul li:first-child {
-  margin-left: 0; /* No margin for the first child */
+  margin-left: 0;
+  /* No margin for the first child */
 }
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(0, 0, 0); /* Changed link color */
+  color: rgb(0, 0, 0);
+  /* Changed link color */
 }
 
 .join-container {
   display: flex;
-  justify-content: flex-start; /* Align content to the start of the container */
-  align-items: center; /* Align items vertically */
+  justify-content: flex-start;
+  /* Align content to the start of the container */
+  align-items: center;
+  /* Align items vertically */
 }
 
 .left-content {
@@ -46,25 +55,28 @@ nav ul li a {
 }
 
 .right-content {
+  flex: 1;
   display: flex;
-  margin-left: 20px; /* Optional: Add some spacing between content and image */
+}
+
+#button {
+  width: max-content;
 }
 
 
 .right-content img {
-  width: 100px; /* Adjust the width according to your preference */
-  height: auto; /* Maintain aspect ratio */
-  display: block;
-  height: auto;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px;
 }
-
 
 
 /* Style for content section */
 .content {
-  flex: 1;
-  max-width: 50%;
+  display: flex;
+  padding: 0 60px;
+  height: 95vh;
 }
 
 /* Style for heading */
@@ -72,6 +84,7 @@ nav ul li a {
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 20px;
+  margin-top: 170px;
 }
 
 /* Style for paragraph */
@@ -88,21 +101,10 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px;
 }
 
 .content a:hover {
   background-color: #0056b3;
-}
-
-
-
-
-
-/* Style for content section */
-.content {
-  text-align: center;
-  max-width: 800px; /* Adjust max-width as needed */
 }
 
 /* Style for heading */
@@ -116,7 +118,7 @@ nav ul li a {
 .features-container {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 /* Style for left features */
@@ -146,10 +148,10 @@ nav ul li a {
 
 .serv-container {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
 }
 
 .serv-container ul {
@@ -166,16 +168,16 @@ nav ul li a {
   background-color: #f9f9f9;
   padding: 20px;
   display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 .features-container {
   display: flex;
   flex-wrap: wrap;
-  
+
 }
 
 .left-features,
@@ -207,17 +209,20 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust height as needed */
+  height: 100vh;
+  /* Adjust height as needed */
 }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-  grid-gap: 20px; /* Gap between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  /* Three columns with equal width */
+  grid-gap: 20px;
+  /* Gap between grid items */
 }
 
 /* CSS for the service items */
-.service-grid > div {
+.service-grid>div {
   padding: 20px;
   background-color: #ffffff;
   border-radius: 5px;
@@ -241,3 +246,14 @@ nav ul li a {
 .service-grid a:hover {
   background-color: #0056b3;
 }
+
+.cont-container,
+.feat-container,
+.serv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+}
+
